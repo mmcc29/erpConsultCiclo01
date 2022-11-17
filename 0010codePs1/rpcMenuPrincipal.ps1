@@ -1,6 +1,6 @@
 <#
 Nome: rpcMenuPrincipal.ps1
-Descricao:
+Descricao: Script para controle do menu principal da aplicaco rpc
 versao: 221116
 
 

@@ -1,7 +1,16 @@
 write-host "passei no rcpCommon.ps1"
+<#
+Nome: rpcMenuPrincipal.ps1
+Descricao:
+versao: 221116
+
+
+#>
+
+
 
 ##### PROCESSAMENTO INICIAL
-pastaTrabalho
+fnPastaTrabalho
 
 ##### PARAMETROS
 $folderData = "\0020data"
@@ -14,7 +23,7 @@ $pathData = $nomePath.Substring(0, $nomePath.lastIndexOf('\')) + "\Data"
 
 ##### FUNCOES
 
-function pastaTrabalho {
+function fnPastaTrabalho {
 $nomePath = (split-path (Get-Item $PSCommandPath).Fullname)
 Set-Location $nomePath
 }
