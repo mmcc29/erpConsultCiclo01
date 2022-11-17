@@ -1,0 +1,20 @@
+Padroes ja definidos:
+    Scripts:
+        Formularios:
+            rpc<nomeFormulario>Form.ps1 - grafico Script
+            rpc<nomeFormulario>.ps1 - regras de negocios da funcao do Formulario
+
+        ScriptsComuns:
+            rpcCommon.ps1 - funcoes usados em varios aplicacoes
+
+        ScriptsAPI:
+            rpcAPI.ps1 - funcoes para incluir, alterar, excluir para todos os arquivos tb<nomeDados>.txt
+
+Ideias:
+
+    rpcCommon.ps1
+        funcao fnBuscaSG(nmTab)
+        funcao fnIncrementaSG(nmTab)
+
+
+
