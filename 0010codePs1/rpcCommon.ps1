@@ -25,6 +25,21 @@ $pathCodePs1 = $nomePath.Substring(0, $nomePath.lastIndexOf('\')) + $folderCodeP
 # funcao fnBuscaSG(nmTab) - pendente construir
 
 # funcao fnIncrementaSG(nmTab) - pendente construir
+ 
+fnCriaTab(nmTab) {
+if (-not (Test-Path -path ($pathdata +"\"nmTab) -PathType Leaf)){ #Caso n�o exista, arquivo � criado
+
+    if (nmTab - eq "tbSG.txt") {
+        set-Content -Value "sgSurroGate | cdCampoSG | nmTab | vlProximoSG" -Path ($pathdata +"\tbSG.txt")
+    }
+    elseif (nmTab - eq "tbxpto.txt") {
+        set-Content -Value "sgSurroGate | cdCampoSG | nmTab | vlProximoSG" -Path ($pathdata +"\tbSG.txt")
+    }
+
+    [System.Windows.MessageBox]::Show('Arquivo 'nmTab ' nao existia e, portanto, foi criado.')
+}
+}
+
 
 
 ##### USO DAS VARIAVEIS
